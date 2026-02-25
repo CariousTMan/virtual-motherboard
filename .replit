@@ -3,3 +3,14 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
+
+[workflows]
+
+[[workflows.workflow]]
+name = "RunVM"
+mode = "sequential"
+author = 41092069
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bash run.sh"
